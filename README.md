@@ -1,11 +1,11 @@
-﻿# WebDev Course – F1nTrack
+﻿# WebDev Course – ProtectX
 
 <!-- * Carátula -->
 
 # Informe Trabajo Final 📙
 
 <img src="completed-examples/assets/images/Banner-UPC.png" alt="Banner UPC">
-completed-examples/assets/images/Banner-UPC.png
+
 ### Universidad Peruana de Ciencias Aplicadas ♨️  
 **Ingeniería de Software - 2025-02**  
 
