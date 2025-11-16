@@ -18,7 +18,7 @@
 - 
 - 
 - Daniel Elias Ruiz Huisa – U202210764  
-- 
+- Liam Anderson Villugas Jeronimo - U202211634
 - Fabrizio Javier Quiroz Zambrano – U202213406  
 
 
@@ -110,7 +110,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sit
 - Jhunior Giussepe Taquiri Calderon – U20221C576  
 - Raul Hiroshi Tasayco Osorio – U202319415  
 - Daniel Elias Ruiz Huisa – U202210764  
-- Matias Rodolfo Salcedo Champi – U202319698  
+- Liam Anderson Villugas Jeronimo - U202211634 
 - Fabrizio Javier Quiroz Zambrano – U202213406  
 
 **Fecha de entrega**: _[Completar]_  
