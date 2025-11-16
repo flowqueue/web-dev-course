@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo — Paleta de colores con CSS</title>
+  <style>
+    /* ---------------------------
+       Variables de color (tema)
+       --------------------------- */
+    :root{
+      /* Tonos principales */
+      --bg:  #0f1724;   /* fondo oscuro */
+      --surface: #0b1220;
+      --text: #e6eef8;
+      --muted: #9aa7bf;
+
+      /* Paleta */
+      --primary: #4f46e5;   /* índigo */
+      --primary-600: #4338ca;
+      --secondary: #06b6d4; /* cyan */
+      --accent: #f97316;    /* naranja */
+
+      /* Estados */
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger:  #ef4444;
+
+      /* Neutros para tarjetas / borders */
+      --card: #0f1724;
+      --border: rgba(255,255,255,0.06);
+    }
+
+    /* ---------------------------
+       Reset y utilidades básicas
+       --------------------------- */
+    * { box-sizing: border-box; }
+    html,body { height:100%; margin:0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,var(--bg), #071021 80%); color:var(--text); -webkit-font-smoothing:antialiased; }
+    .container{ max-width:980px; margin:32px auto; padding:24px; }
+
+    h1,h2{ margin:0 0 12px 0; line-height:1.05; }
+    p{ color:var(--muted); margin:0 0 16px 0; }
+
+    /* ---------------------------
+       Barra superior (ejemplo UI)
+       --------------------------- */
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 16px; border-radius:10px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), transparent);
+      border: 1px solid var(--border);
+      margin-bottom:20px;
+      backdrop-filter: blur(6px);
+    }
+    .brand{ display:flex; align-items:center; gap:12px; }
+    .logo{
+      width:44px; height:44px; border-radius:10px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      display:flex; align-items:center; justify-content:center;
+      font-weight:700; color:white; box-shadow: 0 6px 18px rgba(79,70,229,0.12);
+    }
+
+    /* ---------------------------
+       Tarjeta (card) ejemplo
+       --------------------------- */
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border:1px solid var(--border);
+      padding:18px; border-radius:12px;
+      box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+      display:flex; gap:18px; align-items:center;
+    }
+    .card .info{ flex:1; }
+    .muted { color:var(--muted); font-size:0.95rem; }
+
+    /* ---------------------------
+       Botones con estado + hover
+       --------------------------- */
+    .btn{
+      display:inline-flex; gap:8px; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:10px; cursor:pointer;
+      border:0; font-weight:600; color:white; transition: transform .12s ease, box-shadow .12s;
+      user-select:none;
+    }
+    .btn:active{ transform:translateY(1px); }
+
+    .btn-primary{
+      background: linear-gradient(180deg, var(--primary), var(--primary-600));
+      box-shadow: 0 8px 30px rgba(79,70,229,0.16);
+    }
+    .btn-primary:hover{ filter:brightness(1.05); }
+
+    .btn-ghost{
+      background:transparent; border:1px solid var(--border); color:var(--text);
+    }
+    .btn-danger{ background: linear-gradient(180deg, var(--danger), #c0392b); }
+
+    /* ---------------------------
+       Color utilities (rápidas)
+       --------------------------- */
+    .text-primary{ color:var(--primary); }
+    .text-accent{ color:var(--accent); }
+    .bg-accent{ background: linear-gradient(90deg, rgba(249,115,22,0.12), transparent); padding:6px 10px; border-radius:8px; display:inline-block; }
+
+    /* ---------------------------
+       Pequeñas tarjetas de etiqueta
+       --------------------------- */
+    .chip{
+      display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; font-weight:600; font-size:0.9rem;
+      background: rgba(255,255,255,0.02); border:1px solid var(--border);
+    }
+
+    /* ---------------------------
+       Accesibilidad: foco visible
+       --------------------------- */
+    .btn:focus, .chip:focus, a:focus { outline: 3px solid rgba(79,70,229,0.18); outline-offset: 3px; }
+
+    /* ---------------------------
+       Grid responsive pequeño
+       --------------------------- */
+    .grid{ display:grid; grid-template-columns: 1fr 320px; gap:18px; margin-top:18px; }
+    @media (max-width:820px){ .grid{ grid-template-columns:1fr; } }
+
+    /* ---------------------------
+       Muestra de paleta
+       --------------------------- */
+    .palette{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:12px; }
+    .swatch{ width:86px; height:64px; border-radius:8px; display:flex; align-items:flex-end; padding:8px; color:white; font-weight:700; font-size:0.8rem; box-shadow: 0 6px 18px rgba(2,6,23,0.6); }
+    .swatch small{ font-weight:600; font-size:0.68rem; opacity:0.95; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar" role="banner">
+      <div class="brand">
+        <div class="logo">UI</div>
+        <div>
+          <div style="font-weight:800; font-size:1.05rem;">Demo Colores</div>
+          <div class="muted">Pequeña guía visual de cómo aplicar la paleta</div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px;">
+        <button class="btn btn-ghost">Cancelar</button>
+        <button class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- contenido principal -->
+      <section>
+        <h1>Paleta y componentes</h1>
+        <p class="muted">Este ejemplo usa variables CSS (custom properties) para que cambios de color sean rápidos y consistentes.</p>
+
+        <div class="card" aria-label="Resumen">
+          <div style="width:72px; height:72px; border-radius:10px; background:linear-gradient(135deg,var(--secondary),var(--primary)); display:flex; align-items:center; justify-content:center; font-weight:800; color:white; font-size:1.05rem;">A</div>
+          <div class="info">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <div>
+                <div style="font-weight:800; font-size:1rem;">Proyecto X — Resumen</div>
+                <div class="muted">Estado: <span class="text-primary">En progreso</span></div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <button class="btn btn-primary">Editar</button>
+                <button class="btn btn-ghost">Detalles</button>
+              </div>
+            </div>
+            <p class="muted" style="margin-top:12px;">La tarjeta muestra cómo combinar fondo translúcido, bordes suaves y botones destacados sin romper la consistencia del tema.</p>
+          </div>
+        </div>
+
+        <h2 style="margin-top:20px;">Estados y chips</h2>
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+          <span class="chip" role="note"><small>●</small> Activo</span>
+          <span class="chip" style="background:linear-gradient(90deg,var(--success), #059669); color:white;">Éxito</span>
+          <span class="chip" style="background:linear-gradient(90deg,var(--warning), #d97706); color:black;">Atención</span>
+          <span class="chip" style="background:linear-gradient(90deg,var(--danger), #ef4444); color:white;">Error</span>
+        </div>
+
+        <h2 style="margin-top:20px;">Ejemplos de texto y resaltado</h2>
+        <p class="muted">Puedes usar <span class="text-primary">.text-primary</span>, <span class="text-accent">.text-accent</span> o la clase <span class="bg-accent">.bg-accent</span> para llamar la atención en frases clave.</p>
+      </section>
+
+      <!-- columna lateral: paleta -->
+      <aside>
+        <div style="border-radius:12px; padding:14px; border:1px solid var(--border); background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);">
+          <div style="font-weight:800; margin-bottom:8px;">Paleta</div>
+          <div class="palette" aria-hidden="true">
+            <div class="swatch" style="background:var(--primary)"><small>Primary</small></div>
+            <div class="swatch" style="background:var(--secondary)"><small>Secondary</small></div>
+            <div class="swatch" style="background:var(--accent)"><small>Accent</small></div>
+            <div class="swatch" style="background:var(--success)"><small>Success</small></div>
+            <div class="swatch" style="background:var(--warning); color:black"><small>Warning</small></div>
+            <div class="swatch" style="background:var(--danger)"><small>Danger</small></div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <div class="muted">Contraste recomendado</div>
+            <ul style="margin:8px 0 0 18px; color:var(--muted)">
+              <li>Texto principal sobre fondo oscuro → usar <strong>--text</strong></li>
+              <li>Botones → colores saturados (primary / danger)</li>
+              <li>Fondos de tarjeta → transparencia + borde sutil</li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>

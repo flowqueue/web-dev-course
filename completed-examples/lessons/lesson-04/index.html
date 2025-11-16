@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 4 - Introducción a CSS</title>
+    <style>
+      /* Estilo para todo el cuerpo de la página */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      
+      /* Estilo para el título principal */
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+        background-color: #3498db;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      
+      /* Estilo para los subtítulos */
+      h2 {
+        color: #e74c3c;
+        border-bottom: 2px solid #e74c3c;
+        padding-bottom: 5px;
+      }
+      
+      /* Estilo para párrafos */
+      p {
+        background-color: #ecf0f1;
+        padding: 15px;
+        border-left: 4px solid #3498db;
+        margin: 10px 0;
+      }
+      
+      /* Estilo para listas */
+      ul {
+        background-color: #d5f4e6;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      
+      li {
+        margin: 10px 0;
+        font-weight: bold;
+      }
+      
+      /* Estilo para enlaces */
+      a {
+        color: #9b59b6;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      a:hover {
+        color: #8e44ad;
+        text-decoration: underline;
+      }
+      
+      /* Estilo para imágenes */
+      img {
+        border: 3px solid #34495e;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
+      }
+      
+      /* Estilo para texto destacado */
+      .destacado {
+        background-color: #f39c12;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+      }
+      
+      /* Estilo para la caja de ejemplo */
+      .ejemplo-caja {
+        background-color: #1abc9c;
+        color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lección 4: Introducción a CSS</h1>
+    
+    <p>¡Bienvenido al mundo del CSS! CSS significa "Cascading Style Sheets" y nos permite dar estilo y hacer que nuestras páginas web se vean hermosas.</p>
+    
+    <h2>¿Qué puede hacer CSS?</h2>
+    <ul>
+      <li>Cambiar colores de texto y fondo</li>
+      <li>Modificar fuentes y tamaños de texto</li>
+      <li>Agregar márgenes y espaciado</li>
+      <li>Crear bordes y sombras</li>
+      <li>Posicionar elementos en la página</li>
+    </ul>
+    
+    <div class="ejemplo-caja">
+      <h3>¡Esta caja fue creada con CSS!</h3>
+      <p>Observe el fondo verde, el texto blanco y los bordes redondeados.</p>
+    </div>
+    
+    <h2>Selectores CSS básicos</h2>
+    <p>Los selectores nos ayudan a elegir qué elementos queremos estilizar:</p>
+    
+    <ul>
+      <li><strong>body</strong> - Selecciona todo el cuerpo de la página</li>
+      <li><strong>h1, h2, h3</strong> - Selecciona títulos</li>
+      <li><strong>p</strong> - Selecciona párrafos</li>
+      <li><strong>.clase</strong> - Selecciona elementos con una clase específica</li>
+    </ul>
+    
+    <h2>Colores en CSS</h2>
+    <p>Podemos usar colores de diferentes maneras:</p>
+    <ul>
+      <li>Por nombre: <span style="color: red;">red</span>, <span style="color: blue;">blue</span>, <span style="color: green;">green</span></li>
+      <li>Con códigos hexadecimales: <span style="color: #ff6b6b;">#ff6b6b</span>, <span style="color: #4ecdc4;">#4ecdc4</span></li>
+      <li>Con RGB: <span style="color: rgb(255, 107, 107);">rgb(255, 107, 107)</span></li>
+    </ul>
+    
+    <h2>Recursos para practicar</h2>
+    <p>Sitios web donde puedes experimentar con CSS:</p>
+    <ul>
+      <li><a href="https://codepen.io/" target="_blank">CodePen - Editor online</a></li>
+      <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks - Tutoriales</a></li>
+      <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN CSS - Documentación</a></li>
+    </ul>
+    
+    <img src="https://via.placeholder.com/300x200/9b59b6/white?text=CSS+es+genial!" alt="CSS es genial" width="300" height="200">
+    
+    <div class="destacado">
+      ¡En la siguiente lección crearemos una página completa combinando HTML y CSS!
+    </div>
+    
+    <!-- Comentario: Todo el estilo de esta página está definido en la sección <style> del <head> -->
+  </body>
+</html>
