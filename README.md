@@ -1,4 +1,4 @@
-﻿# WebDev Course – ProtectX
+﻿# WebDev Course – FlowQueue
 
 <!-- * Carátula -->
 
@@ -12,7 +12,7 @@
 
 
 **Sección:** 7357  
-**Docente:** Rafael Oswaldo Castro Veramendi
+**Docente:** 
 **StartUp:** FloqQueue  
 **Integrantes del equipo**:  
 - 
