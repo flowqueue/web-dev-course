@@ -87,7 +87,6 @@ Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sit
 ---
 
 ## Recursos Adicionales
-- **Código Fuente Completo**: https://github.com/F1nTrack/webdev-course-f1ntrack
 - **Todas las Actividades Prácticas**:
 
 | Lección # | Actividad               | Empezar a Programar                        |
