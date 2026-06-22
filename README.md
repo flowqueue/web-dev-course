@@ -7,19 +7,19 @@
 <img src="completed-examples/assets/images/Banner-UPC.png" alt="Banner UPC">
 
 ### Universidad Peruana de Ciencias Aplicadas ♨️  
-**Ingeniería de Software - 2025-02**  
+**Ingeniería de Software - 2026-01**  
 
 
 
 **Sección:** 7357  
 **Docente:** Rafael Oswaldo Castro Veramendi
-**StartUp:** ProtectX  
+**StartUp:** FloqQueue  
 **Integrantes del equipo**:  
 - 
 - 
 - Daniel Elias Ruiz Huisa – U202210764  
-- Liam Anderson Villugas Jeronimo - U202211634
-- Fabrizio Javier Quiroz Zambrano – U202213406  
+- 
+- 
 
 
 
@@ -27,15 +27,14 @@
 ---
 
 ### Repositorio  
-[(https://github.com/ProtectX-5377/webdev-course-protectx.git](https://github.com/ProtectX-5377/webdev-course-protectx.git)
+[(https://github.com/ProtectX-5377/webdev-course-protectx.git](https://github.com/flowqueue/web-dev-course)
 
 ### Prácticas  
 Usaremos únicamente **CodePen** ([https://codepen.io](https://codepen.io)) para todas las actividades prácticas del curso.
 
 ---
 
-# Fundamentos de Desarrollo Web – F1nTrack (KapakID)
-
+# Fundamentos de Desarrollo Web – FloqQueue
 ## Resumen del Curso
 Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sitios web sencillos con HTML y CSS. **¡No requiere descargas!** Solo abre tu navegador web.
 
