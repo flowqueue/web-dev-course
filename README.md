@@ -12,14 +12,14 @@
 
 
 **Sección:** 7357  
-**Docente:** 
-**StartUp:** FloqQueue  
+**Docente:** Jose Miguel Flores Ingaruca
+**StartUp:** FlowQueue 
 **Integrantes del equipo**:  
-- 
-- 
+- Pillaca Vidal Luis Angel - U202315654
+- Mansilla Rivero, Carlos Marcelo	- U202414510
+- Alexander Auden Aliaga Ocampo - U202417693
+- Uribe Linares Francisco Javier - U20211B686
 - Daniel Elias Ruiz Huisa – U202210764  
-- 
-- 
 
 
 
@@ -34,7 +34,7 @@ Usaremos únicamente **CodePen** ([https://codepen.io](https://codepen.io)) para
 
 ---
 
-# Fundamentos de Desarrollo Web – FloqQueue
+# Fundamentos de Desarrollo Web – FlowQueue
 ## Resumen del Curso
 Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sitios web sencillos con HTML y CSS. **¡No requiere descargas!** Solo abre tu navegador web.
 
