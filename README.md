@@ -43,8 +43,6 @@ Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sit
 **Prerrequisitos**: Ninguno  
 **Herramientas necesarias**: **CodePen (https://codepen.io)** — no se requieren descargas; solo un navegador web. Puedes usar CodePen sin registrarte para probar, o crear una cuenta gratuita si quieres guardar tus proyectos.
 
-**Repositorio de código fuente**: https://github.com/ProtectX-5377/webdev-course-protectx.git
-
 ---
 
 ## Secuencia de la lección
@@ -102,15 +100,6 @@ Este curso de 1 hora introduce a estudiantes de secundaria a la creación de sit
 
 
 ---
-
-
-
-**Integrantes del equipo**:  
-- Jhunior Giussepe Taquiri Calderon – U20221C576  
-- Raul Hiroshi Tasayco Osorio – U202319415  
-- Daniel Elias Ruiz Huisa – U202210764  
-- Liam Anderson Villugas Jeronimo - U202211634 
-- Fabrizio Javier Quiroz Zambrano – U202213406  
 
 **Fecha de entrega**: _[Completar]_  
 
