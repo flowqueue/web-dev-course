@@ -27,7 +27,7 @@
 ---
 
 ### Repositorio  
-[(https://github.com/ProtectX-5377/webdev-course-protectx.git](https://github.com/flowqueue/web-dev-course)
+(https://github.com/flowqueue/web-dev-course)
 
 ### Prácticas  
 Usaremos únicamente **CodePen** ([https://codepen.io](https://codepen.io)) para todas las actividades prácticas del curso.
